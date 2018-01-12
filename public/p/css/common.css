@@ -1,11 +1,134 @@
 @charset "UTF-8";
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html,body {
+  height: 100%;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+/*=====================login====================*/
+.body_login {
   /*background-color: #222d32;*/
   background-color: #2f4050;
 }
 
-
 .mt_300 {
   margin-top: 300px;
+}
+
+/*=====================index======================*/
+
+
+.lt_aside {
+  width: 180px;
+  height: 100%;
+  background-color: #2f4050;
+  position: absolute;
+  left: 0;
+  transition: all .5s;
+}
+
+.lt_aside.active {
+  left: -180px;
+}
+
+.brand {
+  height: 50px;
+  background-color: #367fa9;
+}
+.brand a {
+  display: block;
+  height: 100%;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 26px;
+}
+
+.user {
+  height: 150px;
+  margin-top: 50px;
+  color: #fff;
+  font-size: 18px;
+}
+.user img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+
+
+.nav li a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #ccc;
+}
+
+.nav li .category {
+  line-height: 40px;
+  color: #ccc;
+  cursor: pointer;
+}
+.nav li .catelist {
+  font-size: 13px;
+  height: 80px;
+  display: none;
+}
+.catelist a {
+  padding-left: 23px;
+}
+
+.nav li a.active {
+  background-color: rgba(255,255,255,.2);
+  border-left: 3px solid skyblue;
+}
+
+.nav li span {
+  margin-right: 5px;
+}
+
+
+.lt_main {
+  height: 100%;
+  margin-left:180px;
+  transition: all .5s;
+}
+.lt_main.active {
+  margin-left:0;
+}
+
+.lt_header {
+  height: 50px;
+  background-color: #367fa9;
+  margin-bottom: 20px;
+}
+
+.lt_header a {
+  display: block;
+  width: 56px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
+
+.chart_left,.chart_right {
+  width: 45%;
+  height: 500px;
 }
