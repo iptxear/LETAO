@@ -26,6 +26,9 @@ a:active {
 .mt_300 {
   margin-top: 300px;
 }
+.mb_30 {
+  margin-bottom: 30px;
+}
 
 /*=====================index======================*/
 
@@ -131,4 +134,11 @@ a:active {
 .chart_left,.chart_right {
   width: 45%;
   height: 500px;
+}
+
+/*===============用户管理================*/
+
+table th, table.table-bordered tr td {
+  text-align: center;
+  vertical-align: middle;
 }
