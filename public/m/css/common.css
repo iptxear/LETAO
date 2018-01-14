@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+/*=================common=======================*/
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+}
+
+/*=================container=======================*/
+
+.lt_container {
+  max-width: 640px;
+  min-width: 320px;
+  width: 100%;
+  height: 100%;
+  /*background-color: hotpink;*/
+  margin: 0 auto;
+  position: relative;
+  padding:45px 0 55px 0;
+}
+
+/*=================header====================*/
+
+.lt_header {
+  width: 100%;
+  height: 45px;
+  background-color: #069;
+  position: absolute;
+  top: 0;
+}
+
+.icon_left,.icon_right {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  color: #fff;
+}
+
+.icon_left {
+  left: 0;
+}
+.icon_right {
+  right: 0;
+}
+
+.lt_header h1 {
+  line-height: 45px;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+
+/*=================main=======================*/
+
+.lt_main {
+  height: 100%;
+  background-color: #eee;
+  position: relative;
+  overflow: hidden;
+}
+
+.lt_product {
+  padding: 10px;
+}
+
+.lt_product a {
+  padding: 10px;
+  float: left;
+  width: 48%;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.lt_product a:nth-child(odd){
+  margin-right: 4%;
+}
+
+.lt_product a img {
+  display: block;
+  width: 100%;
+}
+
+.lt_product a span:first-child {
+  color: red;
+}
+.lt_product a span:last-child {
+  text-decoration: line-through;
+}
+
+  /*=================footbar=======================*/
+.lt_footbar {
+  width: 100%;
+  height: 55px;
+  background-color: #069;
+  position: absolute;
+  bottom: 0;
+}
+
+.lt_footbar li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.lt_footbar li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.lt_footbar li.active a,
+.lt_footbar li.active p {
+  color: darkorange;
+}
+
+.lt_footbar li p {
+  color: #fff;
+  margin-bottom: 0;
+}
