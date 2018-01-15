@@ -30,7 +30,8 @@ html,body {
 .lt_header {
   width: 100%;
   height: 45px;
-  background-color: #069;
+  /*background-color: #069;*/
+  background-color: #2f4050;
   position: absolute;
   top: 0;
 }
@@ -65,7 +66,7 @@ html,body {
 
 .lt_main {
   height: 100%;
-  background-color: #eee;
+  background-color: #fff;
   position: relative;
   overflow: hidden;
 }
@@ -104,7 +105,8 @@ html,body {
 .lt_footbar {
   width: 100%;
   height: 55px;
-  background-color: #069;
+  /*background-color: #069;*/
+  background-color: #2f4050;
   position: absolute;
   bottom: 0;
 }
@@ -125,7 +127,8 @@ html,body {
 
 .lt_footbar li.active a,
 .lt_footbar li.active p {
-  color: darkorange;
+  /*color: darkorange;*/
+  color: #cbda35;
 }
 
 .lt_footbar li p {

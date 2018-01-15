@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>乐淘商城-分类</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/category.css">
+</head>
+<body>
+
+<div class="lt_container">
+
+  <div class="lt_header">
+    <a href="javascript:history.go(-1);" class="icon_left">
+      <span class="mui-icon mui-icon-back"></span>
+    </a>
+    <h1>乐淘分类</h1>
+    <a href="search.html" class="icon_right">
+      <span class="fa fa-search"></span>
+    </a>
+  </div>
+
+  <div class="lt_main">
+
+    <div class="lt_cate">
+      <div class="mui-scroll-wrapper">
+        <ul class="mui-scroll cate_left">
+          <!--这里放置真实显示的DOM内容-->
+        </ul>
+      </div>
+    </div>
+
+    <div class="lt_content">
+      <div class="mui-scroll-wrapper">
+        <ul class="mui-scroll cate_right">
+          <!--这里放置真实显示的DOM内容-->
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="lt_footbar">
+    <ul class="mui-clearfix">
+      <li>
+        <a href="index.html" class="active">
+          <span class="fa fa-home"></span>
+          <p>首页</p>
+        </a>
+      </li>
+      <li class="active">
+        <a href="category.html">
+          <span class="fa fa-bars"></span>
+          <p>分类</p>
+        </a>
+      </li>
+      <li>
+        <a href="shopping.html">
+          <span class="fa fa-shopping-cart"></span>
+          <p>购物车</p>
+        </a>
+      </li>
+      <li>
+        <a href="user.html">
+          <span class="fa fa-user"></span>
+          <p>会员中心</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+
+<script src="./lib/mui/js/mui.min.js"></script>
+<script src="./lib/zepto/zepto.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/category.js"></script>
+
+<script type="text/template" id="tpl_left">
+  {{each rows v i}}
+
+  <li><a href="#" class="{{i==0?'active':''}}" data-id="{{v.id}}">{{v.categoryName}}</a></li>
+
+  {{/each}}
+
+</script>
+<script type="text/template" id="tpl_right">
+{{if total == 0 }}
+  <p class="info_tip">该分类下暂无更多的品牌信息</p>
+  <p class="info_tip">该分类下暂无更多的品牌信息</p>
+  <p class="info_tip">该分类下暂无更多的品牌信息</p>
+  <p class="info_tip">该分类下暂无更多的品牌信息</p>
+  <p class="info_tip">该分类下暂无更多的品牌信息</p>
+  <p class="info_tip">该分类下暂无更多的品牌信息</p>
+  <p class="info_tip">该分类下暂无更多的品牌信息</p>
+  <p class="info_tip">该分类下暂无更多的品牌信息</p>
+  <p class="info_tip">该分类下暂无更多的品牌信息</p>
+  <p class="info_tip">该分类下暂无更多的品牌信息</p>
+  <p class="info_tip">该分类下暂无更多的品牌信息</p>
+  <p class="info_tip">该分类下暂无更多的品牌信息</p>
+  <p class="info_tip">该分类下暂无更多的品牌信息</p>
+  <p class="info_tip">该分类下暂无更多的品牌信息</p>
+  <p class="info_tip">该分类下暂无更多的品牌信息</p>
+  <p class="info_tip">该分类下暂无更多的品牌信息</p>
+  <p class="info_tip">该分类下暂无更多的品牌信息</p>
+  <p class="info_tip">该分类下暂无更多的品牌信息</p>
+  <p class="info_tip">该分类下暂无更多的品牌信息</p>
+  <p class="info_tip">该分类下暂无更多的品牌信息</p>
+{{/if}}
+{{each rows v i}}
+  <li data-id="{{v.id}}">
+      <a href="#">
+        <img src="{{v.brandLogo}}" alt="">
+        <p>{{v.brandName}}</p>
+      </a>
+    </li>
+{{/each}}
+</script>
+</body>
+</html>

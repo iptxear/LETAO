@@ -5,7 +5,9 @@
 
 mui('.mui-scroll-wrapper').scroll({
   indicators: false,
-  deceleration: 0.0005
+  deceleration: 0.0005,
+  startX: 0, //初始化时滚动至x
+  startY: 0 //初始化时滚动至y
 });
 
 
